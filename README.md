@@ -30,7 +30,10 @@ Y si volvemos a ejecutar el comando *dir* veremos qu estoy **dentro* de la carpe
 
 Haremos lo mismo para situarnos en el terminal que queramos, tan solo tendremos que cambiar la carpeta en la que nos queramos situar cuando ejecutemos el comando *cd*.
 
-Cuando ya tengamos decidido donde queremos clonar el repositorio, entraremos en nuestro repositorio de GitHub y, en la parte superior del mismo, encontraremos el botón verde 
+
+Cuando ya tengamos decidido donde queremos clonar el repositorio, entraremos en nuestro repositorio de GitHub y, en la parte superior del mismo, encontraremos el botón verde que dice *code<>* y copiaremos la url
+
+![]() 
 
 
 
