@@ -1,3 +1,9 @@
+#Importamos random para que las adivinanzas aparezcan de manera aleatoria
+import random
+
+#Lista del 1 al 3 para las adivinanzas
+number = list(range(1, 4))
+
 def showRiddle():    
 
     #método para mostrar la adivinanza, sus respuestas y comprobación de que 
@@ -8,81 +14,90 @@ def showRiddle():
     answer3 = ""
     score = 0
 
-    while answer1 != "a" and answer1 != "b" and answer1 != "c":
+    #Sacamos 2 números aleatorios de la lista
+    sample = random.sample(number, 2)
 
-        print("Aunque tengo cuatro patas, yo nunca puedo comer, tengo la comida encima y no la puedo comer")
-        print("a) La mesa")
-        print("b) La silla")
-        print("c) La cama")
+    if sample[0] == 1 or sample[1] == 1:
+        
+        while answer1 != "a" and answer1 != "b" and answer1 != "c":
 
-        answer1 = input("Adivina la respuesta correcta\n")
+            print("Aunque tengo cuatro patas, yo nunca puedo comer, tengo la comida encima y no la puedo comer")
+            print("a) La mesa")
+            print("b) La silla")
+            print("c) La cama")
 
-        if answer1.lower() != "a" and answer1.lower() != "b" and answer1.lower() != "c":
+            answer1 = input("Adivina la respuesta correcta\n")
 
-            print("Escoge una de las respuestas disponibles")
+            if answer1.lower() != "a" and answer1.lower() != "b" and answer1.lower() != "c":
 
-        else:  
-            
-            if(answer1) == "a":
+                print("Escoge una de las respuestas disponibles")
 
-                print("Has acertado")
-                score += 10
+            else:  
+                
+                if(answer1) == "a":
 
-            else:
+                    print("Has acertado")
+                    score += 10
 
-                print("Has fallado")    
-                score -= 5
+                else:
 
-    while answer2 != "a" and answer2 != "b" and answer2 != "c":
+                    print("Has fallado")    
+                    score -= 5
 
-        print("Salta y salta, y la colita le falta.")
-        print("a) El conejo")
-        print("b) La rana")
-        print("c) El caballo")
+    if sample[0] == 2 or sample[1] == 2:
 
-        answer2 = input("Adivina la respuesta correcta\n")
+        while answer2 != "a" and answer2 != "b" and answer2 != "c":
 
-        if answer2.lower() != "a" and answer2.lower() != "b" and answer2.lower() != "c":
+            print("Salta y salta, y la colita le falta.")
+            print("a) El conejo")
+            print("b) La rana")
+            print("c) El caballo")
 
-            print("Escoge una de las respuestas disponibles")
+            answer2 = input("Adivina la respuesta correcta\n")
 
-        else:  
-            
-            if answer2 == "b":
+            if answer2.lower() != "a" and answer2.lower() != "b" and answer2.lower() != "c":
 
-                print("Has acertado")
-                score += 10
+                print("Escoge una de las respuestas disponibles")
 
-            else:
+            else:  
+                
+                if answer2 == "b":
 
-                print("Has fallado") 
-                score -= 5 
+                    print("Has acertado")
+                    score += 10
+
+                else:
+
+                    print("Has fallado") 
+                    score -= 5 
     
 
-    while answer3 != "a" and answer3 != "b" and answer3 != "c":
+    if sample[0] == 3 or sample[1] == 3:
 
-        print("Blanca por dentro, verde por fuera. Si quieres que te lo diga, espera.")
-        print("a) La manzana")
-        print("b) La naranja")
-        print("c) La pera")
+        while answer3 != "a" and answer3 != "b" and answer3 != "c":
 
-        answer3 = input("Adivina la respuesta correcta\n")
+            print("Blanca por dentro, verde por fuera. Si quieres que te lo diga, espera.")
+            print("a) La manzana")
+            print("b) La naranja")
+            print("c) La pera")
 
-        if answer3.lower() != "a" and answer3.lower() != "b" and answer3.lower() != "c":
+            answer3 = input("Adivina la respuesta correcta\n")
 
-            print("Escoge una de las respuestas disponibles")
+            if answer3.lower() != "a" and answer3.lower() != "b" and answer3.lower() != "c":
 
-        else:  
-            
-            if answer3 == "c":
+                print("Escoge una de las respuestas disponibles")
 
-                print("Has acertado")
-                score += 10
+            else:  
+                
+                if answer3 == "c":
 
-            else:
+                    print("Has acertado")
+                    score += 10
 
-                print("Has fallado")
-                score -= 5    
+                else:
+
+                    print("Has fallado")
+                    score -= 5    
 
 
     #comprobamos la puntuación total del/la participante
@@ -95,11 +110,11 @@ def showRiddle():
 
         print("Tu puntuación es de "+str(score)+" puntos! No puedes ser tan mal@ ni queriendo")
 
-    elif(score == 15):
+    elif(score == 5):
 
         print("Tu puntuación es de "+str(score)+" puntos! Sé que puedes hacerlo mejor")
         
-    elif(score == 30):
+    elif(score == 20):
 
         print("Tu puntuación es de "+str(score)+" puntos! Perfecto!")     
 
