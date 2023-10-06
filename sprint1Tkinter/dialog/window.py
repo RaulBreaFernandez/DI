@@ -15,7 +15,7 @@ class MainWindow():
         self.frame.pack()
 
         #Etiqueta
-        self.label = ttk.Label(self.frame, text = "Este mensaje es poco importante")
+        self.label = ttk.Label(self.frame, text = "Este es el ejercicio 2 del sprint 1")
         self.label.pack()
 
         #Botón
