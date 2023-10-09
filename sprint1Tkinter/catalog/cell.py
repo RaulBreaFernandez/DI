@@ -7,4 +7,5 @@ class Cell:
 
         self.title = title
         self.path = path
-        self.imageTk = ImageTk.PhotoImage(file = self.path)
+        resizedImage = (Image.open(self.path)).resize((100, 100), Image.Resampling.LANCZOS)
+        self.imageTk = ImageTk.PhotoImage(resizedImage)
