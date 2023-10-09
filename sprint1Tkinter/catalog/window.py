@@ -29,7 +29,7 @@ class MainWindow():
         #Bucle para leer la lista
         for i, cell in enumerate(self.cells):
 
-            libro = (Image.open(cell.path))
+            libro = (Image.open(cell.path)).resize((100, 100), Image.Resampling.LANCZOS)
             cell.imagetk = ImageTk.PhotoImage(libro)
             label = ttk.Label(root, image = cell.imagetk, text = cell.title, compound = tk.BOTTOM)
             label.grid(row = 0,column = i)
