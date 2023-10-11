@@ -3,8 +3,10 @@ from tkinter import ttk
 
 class DetailWindow:
 
+    #Constructor
     def __init__(self, root, title, image, description):
 
+        #Argumentos de la ventana emergente
         self.root = root
         self.title = title
         self.image = image
@@ -12,6 +14,8 @@ class DetailWindow:
         self.window = tk.Toplevel(root)
         self.window.title(self.title)
 
+
+        #Creación y empaquetación (método .pack) de etiquetas
         image_label = ttk.Label(self.window, image = self.image)
         image_label.pack()
         title_label = ttk.Label(self.window, text = self.title, font=("JetBrains mono", 16))
