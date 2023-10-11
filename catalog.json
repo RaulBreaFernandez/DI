@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Elantris",
+        "description": "'Elantris' es una novela de fantasía escrita por Brandon Sanderson que se desarrolla en la ciudad de Elantris, una vez gloriosa y mágica, pero ahora en ruinas.",
+        "image_url": "https://raw.githubusercontent.com/RaulBreaFernandez/DI/main/recursos/elantris.jpg"
+    },
+
+    {
+        "name": "El Camino de los Reyes",
+        "description": "'El Camino de los Reyes' es el primer libro de la serie 'El Archivo de las Tormentas' escrita por Brandon Sanderson. La historia se desarrolla en un mundo ficticio llamado Roshar.",
+        "image_url": "https://raw.githubusercontent.com/RaulBreaFernandez/DI/main/recursos/elCaminoDeLosReyes.jpg"
+    },
+
+    {
+        "name": "El Imperio Final",
+        "description": "'El Imperio Final' es el primer libro de la trilogía 'Nacidos de la Bruma' escrita por Brandon Sanderson. La historia se desarrolla en un mundo asolado por cenizas y brumas.",
+        "image_url": "https://raw.githubusercontent.com/RaulBreaFernandez/DI/main/recursos/elImperioFinal.jpg"
+    },
+ 
+    {
+        "name": "Escuadrón",
+        "description": "'Escuadrón' es una novela escrita por Brandon Sanderson que se sitúa en un futuro distópico. La historia sigue a Spensa, una joven con el sueño de convertirse en una piloto de combate y defender su planeta.",
+        "image_url": "https://raw.githubusercontent.com/RaulBreaFernandez/DI/main/recursos/escuadron.jpg"
+    },
+ 
+    {
+        "name": "Yumi y el Pintor de  Pesadillas",
+        "description": "Yumi viene de una tierra de jardines, meditación y espíritus, mientras que Pintor vive en un mundo de oscuridad, tecnología y pesadillas. De pronto sus vidas se ven extrañamente entrelazadas.",
+        "image_url": "https://raw.githubusercontent.com/RaulBreaFernandez/DI/main/recursos/yumiYElPintorDePesadillas.jpg"
+    }
+ 
+ 
+]
