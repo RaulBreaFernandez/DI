@@ -1,9 +1,9 @@
 from tkinter import Tk
-from window import MainWindow
+from LoadingWindow import LoadingWindow
 import tkinter as tk
 
 if __name__ == "__main__":
 
     root = tk.Tk()
-    app = MainWindow(root)
+    app = LoadingWindow(root)
     root.mainloop()
