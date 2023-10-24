@@ -1,24 +1,24 @@
-import tkinter as tk
 from tkinter import ttk
+import tkinter as tk
+from tkinter import messagebox
 
-class DetailWindow:
+class DetailWindow():
 
-    #Constructor
-    def __init__(self, root, title, image, description):
+    def onButtonClicked(self, cell):
 
-        #Argumentos de la ventana emergente
-        self.root = root
-        self.title = title
-        self.image = image
-        self.description = description
-        self.window = tk.Toplevel(root)
-        self.window.title(self.title)
+        message = "Has hecho click en la celda: "+cell.title
+        messagebox.showinfo("Información", message)
 
+        def __init__(self, cell):
 
-        #Creación y empaquetación (método .pack) de etiquetas
-        image_label = ttk.Label(self.window, image = self.image)
-        image_label.pack()
-        title_label = ttk.Label(self.window, text = self.title, font=("JetBrains mono", 16))
-        title_label.pack()
-        description_label = ttk.Label(self.window, text = self.description, wraplength = 300)
-        description_label.pack()
+            root = tk.Toplevel()
+            root.title("DetailWindow")
+            label1 = ttk.Label(root, text=cell.title)
+            label2 = ttk.Label(root, image=cell.image_tk)
+            label3 = ttk.Label(root, text=cell.description, wraplength= 160)
+            label1.pack(side="top")
+            label2.pack()
+            label3.pack()
+            width=int(160)
+            height=int(300)
+

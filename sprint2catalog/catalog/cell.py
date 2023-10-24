@@ -1,17 +1,20 @@
-import tkinter as tk
 from PIL import Image, ImageTk
+import requests
+from io import BytesIO
 
 class Cell:
 
-    #Constructor
-    def __init__(self, title, path, description):
+    def __init__(self, title, description, url):
 
         self.title = title
-        self.path = path
         self.description = description
+        self.image = self.loadImageFromUrl(url).resize((100, 100), resample = Image.LANCZOS)
+        self.image_tk = ImageTk.PhotoImage(self.image)
+
+    def loadImageFromUrl(self, url):
+
+        response = requests.get(url)
+        img = Image.open(BytesIO(response.content))
+
+        return img
         
-        #Abrimos la imagen, la redimensionamos y la guardamos en la variable "resizedImage"
-        resizedImage = (Image.open(self.path)).resize((100, 100), Image.Resampling.LANCZOS)
-        
-        #Convertimos la imagen a objeto "PhotoImage" para poder usarla en widgets de tkinter
-        self.imageTk = ImageTk.PhotoImage(resizedImage)
