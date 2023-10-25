@@ -11,6 +11,11 @@ class LoadingWindow:
         self.jsonData = []
         self.root = root
         self.root.title("Cargando...")
+
+        self.root.geometry("170x120")
+        x=(self.root.winfo_screenwidth() - self.root.winfo_reqwidth())/2
+        y=(self.root.winfo_screenheight() - self.root.winfo_reqheight())/2
+        self.root.geometry(f"+{int(x)}+{int(y)}")
         
         self.label = tk.Label(self.root, text = "Cargando datos...", font = ("Arial", 14))
         self.label.pack(side = tk.TOP, pady = 10)

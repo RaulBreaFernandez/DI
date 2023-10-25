@@ -19,6 +19,14 @@ class DetailWindow():
             label1.pack(side="top")
             label2.pack()
             label3.pack()
-            width=int(160)
-            height=int(300)
+
+
+            width = 160
+            height = 300
+            
+            root.geometry(str(width)+"x"+str(height))
+
+            x = (root.winfo_screenwidth() - width) / 2 
+            y = (root.winfo_screenheight() - height) / 2
+            root.geometry(f"+{int(x)}+{int(y)}")
 

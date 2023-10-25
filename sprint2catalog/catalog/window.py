@@ -29,8 +29,12 @@ class MainWindow():
             label.grid(row = i, column = 0)
             label.bind("<Button-1>", lambda event, cell = cell: self.onButtonClicked(cell))
 
+        width = int(180)
+        height = int(400)
 
+        root.geometry(str(width)+"x"+str(height))
 
-                
-            
+        x = (root.winfo_screenwidth() - width) / 2
+        y = (root.winfo_screenheight() - height) / 2
+        root.geometry(f"+{int(x)}+{int(y)}")
         
