@@ -10,6 +10,11 @@ class MainWindow():
 
         DetailWindow(cell)
 
+    def onButtonClicked2(self):
+
+        message = "Al desarrollador le ha costado mucho hacer este sprint, sé bueno por favor"
+        messagebox.showinfo("Acerca del desarrollador", message)
+
     def __init__(self, root, jsonData):
         
         #Título de la ventana
@@ -37,4 +42,10 @@ class MainWindow():
         x = (root.winfo_screenwidth() - width) / 2
         y = (root.winfo_screenheight() - height) / 2
         root.geometry(f"+{int(x)}+{int(y)}")
-        
+
+        barMenu = tk.Menu()
+        fileMenu = tk.Menu(barMenu, tearoff = False)
+
+        fileMenu.add_command(label = "Acerca de", command = self.onButtonClicked2)
+        barMenu.add_cascade(menu = fileMenu, label = "Ayuda")
+        root.config(menu = barMenu)
