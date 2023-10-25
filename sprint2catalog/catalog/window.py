@@ -1,4 +1,4 @@
-from tkinter import ttk
+from tkinter import Canvas, Frame, Label, Scrollbar, ttk
 import tkinter as tk
 from cell import Cell
 from tkinter import messagebox
@@ -19,6 +19,7 @@ class MainWindow():
         
         #Título de la ventana
         root.title("5 libros de Brandon Sanderson")
+            
         self.cells = []
 
         for i in jsonData:
@@ -27,12 +28,6 @@ class MainWindow():
             description = i.get("description")
             url = i.get("image_url")
             self.cells.append(Cell(name, description, url))
-
-        for i, cell in enumerate(self.cells):
-
-            label = ttk.Label(root, image = cell.image_tk, text = cell.title, compound = tk.BOTTOM)
-            label.grid(row = i, column = 0)
-            label.bind("<Button-1>", lambda event, cell = cell: self.onButtonClicked(cell))
 
         width = int(180)
         height = int(400)
@@ -43,9 +38,26 @@ class MainWindow():
         y = (root.winfo_screenheight() - height) / 2
         root.geometry(f"+{int(x)}+{int(y)}")
 
-        barMenu = tk.Menu()
-        fileMenu = tk.Menu(barMenu, tearoff = False)
+        self.canvas = Canvas(root)
+        self.scrollbar = Scrollbar(root, orient = "vertical", command = self.canvas.yview)
+        self.scrollable_frame = Frame(self.canvas)
+        self.scrollable_frame.bind("<Configure>", lambda e: self.canvas.configure(scrollregion = self.canvas.bbox("all")))
 
-        fileMenu.add_command(label = "Acerca de", command = self.onButtonClicked2)
-        barMenu.add_cascade(menu = fileMenu, label = "Ayuda")
-        root.config(menu = barMenu)
+        self.canvas.create_window((0, 0), window = self.scrollable_frame, anchor = "nw")
+        self.canvas.configure(yscrollcommand = self.scrollbar.set)
+
+        for i, cell in enumerate(self.cells):
+
+            self.addItem(cell)
+
+        self.canvas.grid(row = 0, column = 0, sticky = "nsew")
+        self.scrollbar.grid(row = 0, column = 1, sticky = "ns")
+        
+    def addItem(self, cell):
+
+        frame = Frame(self.scrollable_frame)
+        frame.pack(pady = 10)
+        
+        label = Label(frame, image = cell.image_tk, text = cell.title, compound = tk.BOTTOM)
+        label.grid(row = 0, column = 0)
+        label.bind("<Button-1>", lambda event, clickedCell = cell: self.onButtonClicked(clickedCell))
