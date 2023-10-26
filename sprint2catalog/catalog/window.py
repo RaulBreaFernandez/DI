@@ -29,8 +29,8 @@ class MainWindow():
             url = i.get("image_url")
             self.cells.append(Cell(name, description, url))
 
-        width = int(180)
-        height = int(400)
+        width = int(400)
+        height = int(300)
 
         root.geometry(str(width)+"x"+str(height))
 
