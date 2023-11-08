@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "My Catalog"
+rootProject.name = "MyCatalog"
 include(":app")

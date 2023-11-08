@@ -1,10 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e31206f-89b9-44c4-ab35-85b4ebee5d44" name="Changes" comment="" />
+    <list default="true" id="01355a16-4e83-45f2-918f-ad4b857f66ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/androidTest/java/com/example/mycatalog/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/androidTest/java/com/example/mycatalog/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/java/com/example/mycatalog/CatalogActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/java/com/example/mycatalog/CatalogActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/java/com/example/mycatalog/DetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/java/com/example/mycatalog/DetailActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/layout-land/activity_detail.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/layout/activity_catalog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/layout/activity_catalog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/layout/activity_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/mipmap-anydpi/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/xml/backup_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/test/java/com/example/mycatalog/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/app/src/test/java/com/example/mycatalog/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sprint3Android/MyCatalog/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../sprint3Android/MyCatalog/settings.gradle.kts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +57,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2XoCgveKrbFCKbrHjij2l8Pvzyk" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Xu75ylaS9nALKqLzQMvzDXID19" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -27,22 +68,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
-    <key name="android.template.862596794">
+    <key name="android.template.-43379767">
       <recent name="com.example.mycatalog" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="My_Catalog.app.main" />
+      <module name="MyCatalog.app.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -111,11 +152,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8e31206f-89b9-44c4-ab35-85b4ebee5d44" name="Changes" comment="" />
-      <created>1699286159459</created>
+      <changelist id="01355a16-4e83-45f2-918f-ad4b857f66ae" name="Changes" comment="" />
+      <created>1699466931424</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1699286159459</updated>
+      <updated>1699466931424</updated>
     </task>
     <servers />
   </component>
