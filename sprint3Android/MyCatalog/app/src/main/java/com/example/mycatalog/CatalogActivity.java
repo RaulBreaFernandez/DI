@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class CatalogActivity extends AppCompatActivity {
 
     @Override
