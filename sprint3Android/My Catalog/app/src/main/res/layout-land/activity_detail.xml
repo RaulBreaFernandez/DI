@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <!-- Actualización: Además de lo que ocurría en el layout activity detail, añadimos un bias para ponerlo arriba a la izquierda centrado.-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="El Gato con Botas: el último deseo"
+        android:layout_marginTop="15dp"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/image"/>
+
+    <!-- Actualización: Añadimos un constraint bias horizontal para ponerlo debajo del título.-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/image"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gato"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Actualización: La altura y anchura de la descripción pasa a ser definida en lugar de envolver el contenido.
+    Recordamos añadir un margen al comienzo para que, como tenemos un constraint de izquierda a derecha con la imagen
+    estea, tanto la descripción como el botón, ubicados como en la interfaz de ejemplo.-->
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="120dp"
+        android:text="El Gato con Botas: el último deseo estadounidense de comedia de aventuras animada por computadora producida por DreamWorks Animation y distribuida por Universal Pictures."
+        app:layout_constraintBottom_toTopOf="@+id/likeButton"
+        app:layout_constraintStart_toEndOf="@+id/image"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/likeButton"
+        android:text="Me Gusta"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintStart_toEndOf="@+id/image"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
