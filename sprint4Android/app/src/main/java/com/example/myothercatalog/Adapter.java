@@ -16,11 +16,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
     private final List<BookData> book_Data;
     private final LayoutInflater layoutInflater;
     private final Context context;
+    private final select_listener select_listener;
 
-    public Adapter(List<BookData> bookData, Context context) {
+    public Adapter(List<BookData> bookData, Context context, select_listener listener) {
         this.book_Data = bookData;
         this.context = context;
         this.layoutInflater = LayoutInflater.from(context);
+        this.select_listener = listener;
     }
 
     @NonNull
@@ -35,8 +37,15 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         BookData bookData = book_Data.get(position);
         holder.title.setText(bookData.getTitle());
         Glide.with(context).load(bookData.getUrl()).into(holder.image);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                select_listener.onItemClick(bookData);
+            }
+        });
 
     }
+
 
     @Override
     public int getItemCount() {

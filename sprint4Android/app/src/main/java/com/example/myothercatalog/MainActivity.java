@@ -15,8 +15,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
+import android.content.Intent;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements select_listener {
 
     private RecyclerView recyclerView;
 
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
-                                Adapter adapter = new Adapter(book_list, MainActivity.this);
+                                Adapter adapter = new Adapter(book_list, MainActivity.this, MainActivity.this);
                                 recyclerView.setAdapter(adapter);
                                 recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
                             }
@@ -63,7 +64,10 @@ public class MainActivity extends AppCompatActivity {
                             }
                         }
                 );
-
         Volley.newRequestQueue(this).add(request);
+    }
+    public void onItemClick(BookData bookData) {
+        Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+        startActivity(intent);
     }
 }
