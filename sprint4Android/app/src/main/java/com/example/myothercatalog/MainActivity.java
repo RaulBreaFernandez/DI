@@ -5,7 +5,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import com.android.volley.Request;
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
@@ -68,6 +67,12 @@ public class MainActivity extends AppCompatActivity implements select_listener {
     }
     public void onItemClick(BookData bookData) {
         Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+        String title = bookData.getTitle();
+        String description = bookData.getDescription();
+        String url = bookData.getUrl();
+        intent.putExtra(DetailActivity.name, title);
+        intent.putExtra(DetailActivity.description, description);
+        intent.putExtra(DetailActivity.url, url);
         startActivity(intent);
     }
 }
