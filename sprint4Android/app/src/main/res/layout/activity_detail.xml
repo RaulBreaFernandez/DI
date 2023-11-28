@@ -13,7 +13,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="150dp" />
+        android:layout_marginTop="150dp"
+        android:textAlignment="center"
+        style = "@style/title_text_size"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview_detail_activity"
