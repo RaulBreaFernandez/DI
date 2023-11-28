@@ -19,12 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <!-- Para el borde circular de la imagen, se empleó un CardView, que es un contenedor para, entre otras cosas,
-    imágenes. Se usa como una tarjeta a la que puede agregarse sombras o bordes redondeados al contenido.
-
-    Dentro del CardView, se incluye un ImageView al que agregamos los constraints para que la imagen se
-    mantenga en el sitio deseado, además de los márgenes. En el CardView también se agregan los layout
-    pertinentes. Además de asegurarse de tener un constraint respecto al titulo.-->
 
     <androidx.cardview.widget.CardView
         android:layout_width="200dp"
